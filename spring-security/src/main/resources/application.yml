@@ -1,0 +1,25 @@
+server:
+  port: 9500
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hkjin?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+
+  jwt:
+    secret:
+      key: abcdefghijklmnopqrstuvwxyzjinhyeonkyu990510naverpayletsgogo
